@@ -1,0 +1,55 @@
+.city-selector {
+  margin-bottom: 2rem;
+}
+
+.popular-cities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.city-btn {
+  padding: 0.6rem 1.2rem;
+  background: #f5f5f5;
+  color: #333;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.city-btn:hover {
+  background: #e0e0e0;
+  transform: translateY(-1px);
+}
+
+.city-btn.active {
+  background: #667eea;
+  color: white;
+  border-color: #5568d3;
+}
+
+.custom-city-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.custom-city-form input {
+  flex: 1;
+}
+
+.custom-city-form button {
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .custom-city-form {
+    flex-direction: column;
+  }
+
+  .custom-city-form button {
+    width: 100%;
+  }
+}
